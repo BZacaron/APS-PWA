@@ -10,9 +10,10 @@ namespace Buffet.Models.Buffet.Convidado
         public string Nome { get; set; }
         public string Email { get; set; }
         public string CPF { get; set; }
-        public string DataNascimento { get; set; }
-        public string DataInsercao { get; set; }
+        public DateTime DataNascimento { get; set; }
+        public DateTime DataInsercao { get; set; }
         public string Observacoes { get; set; }
+
         Evento.EventoEntity Evento;
         SituacaoConvidado Situacao;
     }

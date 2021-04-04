@@ -5,11 +5,16 @@ namespace Buffet.Models.Buffet.Cliente
 {
     public class ClienteEntity
     {
-        [Key] public int Id { get; set; }
-        [Required] public string Nome { get; set; }
-        public DateTime DataDeNascimento { get; set; }
-        public int Idade { get; set; }
-        
-        public string Sobrenome { get; set; }
+        TipoCliente Tipo;
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string CPF { get; set; }
+        public DateTime DataNascimento { get; set; }
+        public string Email { get; set; }
+        public string Endereco { get; set; }
+        public DateTime Insercao { get; set; }
+        public DateTime Modificacao { get; set; }
+        public string Observacoes { get; set; }
+
     }
 }
